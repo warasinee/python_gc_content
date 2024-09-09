@@ -1,4 +1,9 @@
 import sys
+"""
+Reads a FASTA file and calculates the average GC content of all sequences.
+
+Usage: python gc_content.py <fasta_file>
+"""
 
 def calculate_gc_content(sequence):
     """
@@ -42,7 +47,7 @@ def main():
     fasta_file = sys.argv[1]
     full_sequence = read_fasta(fasta_file)
     gc_content = calculate_gc_content(full_sequence)
-    print(f"Overall GC Content: {gc_content:.2f}%")
+    print(f"Overall GC Content: {gc_content:.2f}%"
 
 if __name__ == "__main__":
     main()
